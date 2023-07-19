@@ -14,4 +14,9 @@ export class AppController {
   doMagic() {
     return this.appService.doingMagic();
   }
+
+  @Get('translate')
+  translate() {
+    return this.appService.translate();
+  }
 }
